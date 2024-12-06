@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es">
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1, width=device-width">
+      <link rel="stylesheet" href="/CSS/contacto.css" />
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Giarek - Demo Version:wght@400&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura PT:wght@300&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap" />
+      <title>Luz Murgas</title>
+
+<body>
+      <div class="contacto">
+            <div class="cabecera">
+                  <div class="logo" id="logoContainer">
+                        <img class="logo-icon" alt="" src="/IMG/Logo__icon.svg">
+                        <div class="logo-texto">UZ MURGAS</div>
+                  </div>
+                  <div class="icon">
+                        <img class="icon-behance" alt="" src="/IMG/Icon__behance.svg" id="iconBehance">
+                        <img class="icon-instagram" alt="" src="/IMG/Icon__instagram.svg" id="iconInstagram">
+                        <img class="icon-github" alt="" src="/IMG/Icon__github.svg" id="iconGithub">
+                        <img class="icon-facebook" alt="" src="/IMG/Icon__facebook.svg" id="iconFacebook">
+                        <img class="icon-pinterest" alt="" src="/IMG/Icon__pinterest.svg" id="iconPinterest">
+                  </div>
+            </div>
+            <div class="men">
+                  <div class="men-izq">
+                        <div class="men-izq-inicio" id="menIzqInicioContainer">
+                              <div class="inicio">INICIO</div>
+                        </div>
+                        <div class="men-izq-sobrem" id="menIzqSobremContainer">
+                              <div class="inicio">SOBRE MI</div>
+                        </div>
+                        <div class="men-izq-sobrem" id="menIzqPortafolioContainer">
+                              <div class="inicio">PORTAFOLIO</div>
+                        </div>
+                        <div class="men-izq-servicios" id="menIzqServiciosContainer">
+                              <div class="inicio">SERVICIOS</div>
+                        </div>
+                  </div>
+                  <div class="men-der">
+                        <div class="inicio">CONTACTO</div>
+                        <img class="men-der-icon" alt="" src="/IMG/Menú__der__icon.svg">
+                  </div>
+            </div>
+            <div class="contenido">
+                  <div class="contenido-formulario">
+                        <form method="POST">
+                              <div class="contenido-formulario-texto">
+                                    <h2 class="contenido-formulario-texto-">¡Contáctame!</h2>
+                                    <p class="contenido-formulario-texto-1">Todo comentario o cotización bien dirigida
+                                          siempre será bienvenida. Ten un poco de paciencia, lind@, te responderé lo más
+                                          rápido posible.</p>
+                              </div>
+                              <div class="contenido-formulario-casilla">
+                                    <!-- Campo de Nombre -->
+                                    <div class="contenido-formulario-casilla1 nombre">
+                                          <input type="text" name="nombre" placeholder="Nombre completo" required>
+                                    </div>
+                                    <!-- Campo de Email -->
+                                    <div class="contenido-formulario-casilla2 email">
+                                          <input type="email" name="email" placeholder="Correo electrónico" required>
+                                    </div>
+                                    <!-- Campo de Mensaje -->
+                                    <div class="contenido-formulario-casilla4">
+                                          <textarea name="mensaje" placeholder="Escribe tu mensaje aquí" rows="5"
+                                                required></textarea>
+                                    </div>
+                              </div>
+                              <!-- Botón de Enviar -->
+                              <div class="contenido-formulario-botn">
+                                    <button type="submit" class="contenido-formulario-botn-">ENVIAR MENSAJE</button>
+                              </div>
+                        </form>
+                  </div>
+                  <div>
+                        <img class="contenido-img-icon" alt="" src="/IMG/Contenido__img.png">
+                  </div>
+            </div>
+      </div>
+      </div>
+      <script>
+            var iconBehance = document.getElementById("iconBehance");
+            if (iconBehance) {
+                  iconBehance.addEventListener("click", function () {
+                        window.open("https://www.behance.net/luzdarimaestre");
+                  });
+            }
+            var iconGithub = document.getElementById("iconGithub");
+            if (iconGithub) {
+                  iconGithub.addEventListener("click", function () {
+                        window.open("https://github.com/LuzMurgas");
+                  });
+            }
+            var iconPinterest = document.getElementById("iconPinterest");
+            if (iconPinterest) {
+                  iconPinterest.addEventListener("click", function () {
+                        window.open("https://pin.it/77ccEceQT");
+                  });
+            }
+            var iconInstagram = document.getElementById("iconInstagram");
+            if (iconInstagram) {
+                  iconInstagram.addEventListener("click", function () {
+                        window.open("https://www.instagram.com/luz_murgas/");
+                  });
+            }
+            var iconFacebook = document.getElementById("iconFacebook");
+            if (iconFacebook) {
+                  iconFacebook.addEventListener("click", function () {
+                        window.open("https://www.facebook.com/share/14unut93zS/?mibextid=LQQJ4d");
+                  });
+            }
+            var logoContainer = document.getElementById("logoContainer");
+            if (logoContainer) {
+                  logoContainer.addEventListener("click", function (e) {
+                        window.location.href = "index.html"; //
+                  });
+            }
+
+            var menIzqInicioContainer = document.getElementById("menIzqInicioContainer");
+            if (menIzqInicioContainer) {
+                  menIzqInicioContainer.addEventListener("click", function (e) {
+                        window.location.href = "index.html";
+                  });
+            }
+
+            var menIzqSobremContainer = document.getElementById("menIzqSobremContainer");
+            if (menIzqSobremContainer) {
+                  menIzqSobremContainer.addEventListener("click", function (e) {
+                        window.location.href = "sobremi.html";
+                  });
+            }
+
+            var menIzqPortafolioContainer = document.getElementById("menIzqPortafolioContainer");
+            if (menIzqPortafolioContainer) {
+                  menIzqPortafolioContainer.addEventListener("click", function (e) {
+                        window.location.href = "portafolio.html";
+                  });
+            }
+
+            var menIzqServiciosContainer = document.getElementById("menIzqServiciosContainer");
+            if (menIzqServiciosContainer) {
+                  menIzqServiciosContainer.addEventListener("click", function (e) {
+                        window.location.href = "servicios.html";
+                  });
+            }
+
+            var menDerContainer = document.getElementById("menDerContainer");
+            if (menDerContainer) {
+                  menDerContainer.addEventListener("click", function (e) {
+                        window.location.href = "contacto.html";
+                  });
+            }
+      </script>
+</body>
+
+</html>

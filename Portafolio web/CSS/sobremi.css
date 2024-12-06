@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+.logo-icon {
+    position: absolute;
+    height: 100%;
+    width: 34.29%;
+    top: 0%;
+    right: 65.71%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.logo-texto {
+    position: absolute;
+    height: 32.29%;
+    width: 70%;
+    top: 55.71%;
+    left: 30%;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.logo {
+    width: 140px;
+    position: relative;
+    height: 70px;
+}
+.icon-behance {
+    width: 25px;
+    position: relative;
+    height: 25px;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.cabecera {
+    align-self: stretch;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 72px;
+    font-size: 20px;
+}
+.inicio {
+    position: relative;
+    letter-spacing: 2px;
+}
+.men-izq-inicio {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+.men-izq-sobrem {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #000;
+}
+.men-izq-portafolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.men-izq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.men-der-icon {
+    width: 24px;
+    position: relative;
+    height: 21px;
+}
+.men-der {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+.men {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 72px;
+    color: #fff;
+}
+.contenido-sup-foto-icon {
+    width: 323px;
+    position: relative;
+    border-radius: 16px;
+    height: 237px;
+    object-fit: contain;
+}
+.hola-soy-luz {
+    margin: 0;
+}
+.contenido-sup-texto-txt {
+    width: 100%;
+}
+.contenido-sup-texto {
+    width: 435px;
+    position: relative;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 223px;
+    flex-shrink: 0;
+}
+.contenido-sup-perfil {
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    font-weight: 300;
+    font-family: 'Futura PT';
+}
+.contenido-sup {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 7px 28px;
+}
+.contenido-inf-experiencia-c1 {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 150%;
+    font-weight: 300;
+}
+.contenido-inf-experiencia-c2 {
+    width: 0.5px;
+    position: relative;
+    border-right: 0.5px solid #fff;
+    box-sizing: border-box;
+    height: 100.5px;
+}
+.contenido-inf-experiencia-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.contenido-inf-experiencia-t {
+    width: 474px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: Faustina;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.contenido-inf-experiencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.contenido-inf-educacinforma2 {
+    width: 109px;
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 150%;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.contenido-inf-educacinforma1 {
+    width: 129px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.cursando-carrera-de {
+    margin-bottom: 0px;
+}
+.cursando-carrera-de-diseo-gr {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 21px;
+}
+.contenido-inf-educacinforma4 {
+    width: 436px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: Faustina;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.contenido-inf-educacinforma {
+    width: 595px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    text-align: right;
+}
+.contenido-inf-aptitudes-com {
+    width: 131px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.contenido-inf-aptitudes-tex {
+    width: 494px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: Faustina;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.contenido-inf-aptitudes {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    color: #fff;
+}
+.contenido-inf {
+    width: 655px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 27px;
+    font-size: 20px;
+    font-family: 'Futura PT';
+}
+.contenido {
+    width: 803px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    box-sizing: border-box;
+    gap: 41px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Faustina;
+}
+.sobre-m {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: transparent;
+    font-family: 'Giarek - Demo Version';
+}
+
+@media (max-width: 600px) {
+    
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .logo-icon {
+        width: 30%;
+        height: auto;
+    }
+
+    .logo-texto {
+        font-size: 12px;
+        top: 40%;
+        left: 30%;
+        text-align: left;
+    }
+
+    .cabecera {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .men {
+        flex-direction: column;
+        padding: 15px 0;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .inicio {
+        font-size: 14px;
+    }
+
+    .men-izq {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .men-izq-inicio,
+    .men-izq-sobrem,
+    .men-izq-portafolio,
+    .men-izq-servicios {
+        padding: 6px 10px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+
+    .men-der {
+        padding: 6px 10px;
+        gap: 8px;
+    }
+
+    .contenido {
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .contenido-sup {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .foto {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contenido-sup-texto {
+        margin-top: 10px;
+    }
+
+.contenido-sup {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenido-sup-texto {
+    width: 100%;
+    height: auto;
+}
+
+    .contenido-inf {
+        width: 100%;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .contenido-inf-experiencia, 
+    .contenido-inf-educacinforma, 
+    .contenido-inf-aptitudes {
+        flex-direction:column;
+        align-items: first baseline ;
+        gap: 15px;
+    }
+
+    .contenido-inf-experiencia-t, 
+    .contenido-inf-educacinforma4, 
+    .contenido-inf-aptitudes-tex {
+        width: 60%;
+        font-size: 12px;
+
+    }
+
+
+    .icon {
+        gap: 5px;
+    }
+
+    .icon-instagram {
+        width: 25px;
+        position: relative;
+        height: 25px;
+    }
+
+    .sobre-m {
+        gap: 10px;
+    }
+}
+
+

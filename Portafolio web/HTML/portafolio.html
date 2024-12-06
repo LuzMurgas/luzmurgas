@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="/CSS/portafolio.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Giarek - Demo Version:wght@400&display=swap" />
+    <title>Luz Murgas</title>
+</head>
+
+<body>
+    <div class="portafolio">
+        <div class="cabecera">
+            <div class="logo" id="logoContainer">
+                <img class="logo-icon" alt="" src="/IMG/Logo__icon.svg">
+                <div class="logo-texto">UZ MURGAS</div>
+            </div>
+            <div class="icon">
+                <img class="icon-behance" alt="" src="/IMG/Icon__behance.svg" id="iconBehance">
+                        <img class="icon-instagram" alt="" src="/IMG/Icon__instagram.svg" id="iconInstagram">
+                        <img class="icon-github" alt="" src="/IMG/Icon__github.svg" id="iconGithub">
+                        <img class="icon-facebook" alt="" src="/IMG/Icon__facebook.svg" id="iconFacebook">
+                        <img class="icon-pinterest" alt="" src="/IMG/Icon__pinterest.svg" id="iconPinterest">
+                </div>
+        </div>
+        <div class="men">
+            <div class="men-izq">
+                <div class="men-izq-inicio" id="menIzqInicioContainer">
+                    <div class="inicio">INICIO</div>
+                </div>
+                <div class="men-izq-sobrem" id="menIzqSobremContainer">
+                    <div class="inicio">SOBRE MI</div>
+                </div>
+                <div class="men-izq-portafolio" id="menIzqPortafolioContainer">
+                    <div class="inicio">PORTAFOLIO</div>
+                </div>
+                <div class="men-izq-servicios" id="menIzqServiciosContainer">
+                    <div class="inicio">SERVICIOS</div>
+                </div>
+            </div>
+            <div class="men-der" id="menDerContainer">
+                <div class="inicio">CONTACTO</div>
+                <img class="men-der-icon" alt="" src="/IMG/Menú__der__icon.svg">
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="contenido-columna1">
+                <img class="contenido-columna1-editorial-icon" alt="" src="/IMG/Contenido__columna1__editorial.png">
+                <img class="contenido-columna1-revista-icon" alt="" src="/IMG/Contenido__columna1__revista.png">
+            </div>
+            <div class="contenido-columna1">
+                <img class="contenido-columna1-editorial-icon" alt="" src="/IMG/Contenido__columna2__sesión.png">
+                <img class="contenido-columna1-revista-icon" alt="" src="/IMG/Contenido__columna2__composición.png">
+            </div>
+            <div class="contenido-columna1">
+                <img class="contenido-columna1-editorial-icon" alt="" src="/IMG/Contenido__columna3__cartel.png">
+                <img class="contenido-columna1-revista-icon" alt="" src="/IMG/Contenido__columna3__retroglam.png">
+            </div>
+        </div>        
+    <script>
+        var iconBehance = document.getElementById("iconBehance");
+        if (iconBehance) {
+            iconBehance.addEventListener("click", function () {
+                window.open("https://www.behance.net/luzdarimaestre");
+            });
+        }
+        var iconGithub = document.getElementById("iconGithub");
+        if (iconGithub) {
+            iconGithub.addEventListener("click", function () {
+                window.open("https://github.com/LuzMurgas");
+            });
+        }
+        var iconPinterest = document.getElementById("iconPinterest");
+        if (iconPinterest) {
+            iconPinterest.addEventListener("click", function () {
+                window.open("https://pin.it/77ccEceQT");
+            });
+        }
+        var iconInstagram = document.getElementById("iconInstagram");
+        if (iconInstagram) {
+            iconInstagram.addEventListener("click", function () {
+                window.open("https://www.instagram.com/luz_murgas/");
+            });
+        }
+        var iconFacebook = document.getElementById("iconFacebook");
+        if (iconFacebook) {
+            iconFacebook.addEventListener("click", function () {
+                window.open("https://www.facebook.com/share/14unut93zS/?mibextid=LQQJ4d");
+            });
+        }
+        var logoContainer = document.getElementById("logoContainer");
+        if (logoContainer) {
+            logoContainer.addEventListener("click", function (e) {
+                window.location.href = "index.html"; //
+            });
+        }
+
+        var menIzqInicioContainer = document.getElementById("menIzqInicioContainer");
+        if (menIzqInicioContainer) {
+            menIzqInicioContainer.addEventListener("click", function (e) {
+                window.location.href = "index.html"; 
+            });
+        }
+
+        var menIzqSobremContainer = document.getElementById("menIzqSobremContainer");
+        if (menIzqSobremContainer) {
+            menIzqSobremContainer.addEventListener("click", function (e) {
+                window.location.href = "sobremi.html";
+            });
+        }
+
+        var menIzqPortafolioContainer = document.getElementById("menIzqPortafolioContainer");
+        if (menIzqPortafolioContainer) {
+            menIzqPortafolioContainer.addEventListener("click", function (e) {
+                window.location.href = "portafolio.html"; 
+            });
+        }
+
+        var menIzqServiciosContainer = document.getElementById("menIzqServiciosContainer");
+        if (menIzqServiciosContainer) {
+            menIzqServiciosContainer.addEventListener("click", function (e) {
+                window.location.href = "servicios.html"; 
+            });
+        }
+
+        var menDerContainer = document.getElementById("menDerContainer");
+        if (menDerContainer) {
+            menDerContainer.addEventListener("click", function (e) {
+                window.location.href = "contacto.html"; 
+            });
+        }
+
+        document.querySelectorAll('.contenido img').forEach((imagen) => {
+    imagen.addEventListener('click', () => {
+        window.location.href = 'https://www.behance.net/luzdarimaestre';
+    });
+});
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Giarek - Demo Version:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Futura PT:wght@300&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap" />
+    <title>Luz Murgas</title>
+</head>
+
+<body>
+    <div class="inicio">
+        <div class="cabecera">
+            <div class="logo" id="logoContainer">
+                <img class="logo-icon" alt="" src="/IMG/Logo__icon.svg">
+                <div class="logo-texto">UZ MURGAS</div>
+            </div>
+            <div class="icon">
+                <img class="icon-behance" alt="" src="/IMG/Icon__behance.svg" id="iconBehance">
+                <img class="icon-instagram" alt="" src="/IMG/Icon__instagram.svg" id="iconInstagram">
+                <img class="icon-github" alt="" src="/IMG/Icon__github.svg" id="iconGithub">
+                <img class="icon-facebook" alt="" src="/IMG/Icon__facebook.svg" id="iconFacebook">
+                <img class="icon-pinterest" alt="" src="/IMG/Icon__pinterest.svg" id="iconPinterest">
+            </div>
+        </div>
+        <div class="men">
+            <div class="men-izq">
+                <div class="men-izq-inicio" id="menIzqInicioContainer">
+                    <div class="inicio">INICIO</div>
+                </div>
+                <div class="men-izq-sobrem" id="menIzqSobremContainer">
+                    <div class="sobre-mi">SOBRE MI</div>
+                </div>
+                <div class="men-izq-sobrem" id="menIzqPortafolioContainer">
+                    <div class="portafolio">PORTAFOLIO</div>
+                </div>
+                <div class="men-izq-sobrem" id="menIzqServiciosContainer">
+                    <div class="servicios">SERVICIOS</div>
+                </div>
+            </div>
+            <div class="men-der" id="menDerContainer">
+                <div class="contacto">CONTACTO</div>
+                <img class="men-der-icon" alt="" src="/IMG/Menú__der__icon.svg">
+            </div>
+        </div>
+        <div class="contenido">
+            <div class="contenido-texto">
+                <div class="texto">
+                    <div class="texto-ttulo">BIENVENID@S A MI</div>
+                    <div class="texto-ttulo-portafolio" id="textoTtuloPortafolio">PORTAFOLIO</div>
+                    <div class="texto-frase">¡Disfruta de mis trabajos y contáctame para hacer los tuyos realidad!</div>
+                </div>
+            </div>
+            <div class="contenido-imagenes interactiva">
+                <div class="imagenes-scroll">
+                    <a href="https://www.instagram.com/luz_murgas/" target="_blank">
+                        <img src="/IMG/Foto-1.png" alt="Imagen 1">
+                    </a>
+                    <a href="https://www.instagram.com/luz_murgas/" target="_blank">
+                        <img src="/IMG/Foto-2.png" alt="Imagen 2">
+                    </a>
+                    <a href="https://www.instagram.com/luz_murgas/" target="_blank">
+                        <img src="/IMG/Foto-3.png" alt="Imagen 3">
+                    </a>
+                    <a href="https://www.instagram.com/luz_murgas/" target="_blank">
+                        <img src="/IMG/Foto-4.png" alt="Imagen 4">
+                    </a>
+                    <a href="https://www.instagram.com/luz_murgas/" target="_blank">
+                        <img src="/IMG/Foto-5.png" alt="Imagen 5">fder34
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const contenedor = document.querySelector('.contenido-imagenes');
+        const scrollArea = document.querySelector('.imagenes-scroll');
+
+        // Evento para mover las imágenes basado en la posición del mouse
+        contenedor.addEventListener('mousemove', (e) => {
+            const contenedorWidth = contenedor.offsetWidth;
+            const scrollWidth = scrollArea.scrollWidth;
+
+            // Calcula la posición del mouse como un porcentaje
+            const mouseX = e.clientX - contenedor.getBoundingClientRect().left;
+            const porcentaje = mouseX / contenedorWidth;
+
+            // Desplaza las imágenes basado en la posición del mouse
+            const desplazamiento = (scrollWidth - contenedorWidth) * porcentaje;
+            scrollArea.style.transform = `translateX(-${desplazamiento}px)`;
+        });
+
+
+
+        var iconBehance = document.getElementById("iconBehance");
+        if (iconBehance) {
+            iconBehance.addEventListener("click", function () {
+                window.open("https://www.behance.net/luzdarimaestre");
+            });
+        }
+        var iconGithub = document.getElementById("iconGithub");
+        if (iconGithub) {
+            iconGithub.addEventListener("click", function () {
+                window.open("https://github.com/LuzMurgas");
+            });
+        }
+        var iconPinterest = document.getElementById("iconPinterest");
+        if (iconPinterest) {
+            iconPinterest.addEventListener("click", function () {
+                window.open("https://pin.it/77ccEceQT");
+            });
+        }
+        var iconInstagram = document.getElementById("iconInstagram");
+        if (iconInstagram) {
+            iconInstagram.addEventListener("click", function () {
+                window.open("https://www.instagram.com/luz_murgas/");
+            });
+        }
+        var iconFacebook = document.getElementById("iconFacebook");
+        if (iconFacebook) {
+            iconFacebook.addEventListener("click", function () {
+                window.open("https://www.facebook.com/share/14unut93zS/?mibextid=LQQJ4d");
+            });
+        }
+
+        var logoContainer = document.getElementById("logoContainer");
+        if (logoContainer) {
+            logoContainer.addEventListener("click", function (e) {
+                window.location.href = "index.html"; //
+            });
+        }
+
+        var menIzqInicioContainer = document.getElementById("menIzqInicioContainer");
+        if (menIzqInicioContainer) {
+            menIzqInicioContainer.addEventListener("click", function (e) {
+                window.location.href = "index.html"; 
+            });
+        }
+
+        var menIzqSobremContainer = document.getElementById("menIzqSobremContainer");
+        if (menIzqSobremContainer) {
+            menIzqSobremContainer.addEventListener("click", function (e) {
+                window.location.href = "sobremi.html";
+            });
+        }
+
+        var menIzqPortafolioContainer = document.getElementById("menIzqPortafolioContainer");
+        if (menIzqPortafolioContainer) {
+            menIzqPortafolioContainer.addEventListener("click", function (e) {
+                window.location.href = "portafolio.html"; 
+            });
+        }
+
+        var menIzqServiciosContainer = document.getElementById("menIzqServiciosContainer");
+        if (menIzqServiciosContainer) {
+            menIzqServiciosContainer.addEventListener("click", function (e) {
+                window.location.href = "servicios.html"; 
+            });
+        }
+
+        var menDerContainer = document.getElementById("menDerContainer");
+        if (menDerContainer) {
+            menDerContainer.addEventListener("click", function (e) {
+                window.location.href = "contacto.html"; 
+            });
+        }
+
+        var textoTtuloPortafolio = document.getElementById("textoTtuloPortafolio");
+        if (textoTtuloPortafolio) {
+            textoTtuloPortafolio.addEventListener("click", function (e) {
+                window.location.href = "portafolio.html"
+            });
+        }
+    </script>
+</body>
+
+</html>
